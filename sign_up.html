@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Home </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class = "header">
+        <h2> GAME ART </h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new_post.html">Post</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <br> 
+    <br> 
+
+    <div class = "signup-container">
+    <form action = "signup()">
+
+            <label for ="uname" id = "uname"> Username: </label><br>
+            <input type ="text" id="uname" name="uname" size = "100"><br>
+            <br>
+            <label for ="pword" id = "pword"> Password: </label><br>
+            <input type ="password" id="pword" name="pword"><br><br>
+
+            <label for ="confirm-pword" id = "confirm-pword"> Confirm Passowrd: </label><br>
+            <input type ="password" id="confirm-pword" name="confirm-pword" size = "100"><br>
+            <br>
+
+            <label for ="email" id = "email"> Email: </label><br>
+            <input type ="email" id="email" name="email"><br><br>
+
+            <label for="profilepic" id = "profilepic"> Upload Profile Picture</label><br>
+            <input type="file" name="profilepic" id="profilepic"><br><br>
+
+            <fieldset id = "interests">
+                <legend>Choose your interests:</legend>
+            
+                <div>
+                    <input type="checkbox" id="vg" name="vg">
+                    <label for="vg">Video Games</label>
+                  </div>
+                <div>
+                  <input type="checkbox" id="Anime" name="Anime">
+                  <label for="Anime">Anime</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Others" name="Others">
+                    <label for="Others">Others <input type="text" id="Others" name="Others"></label>
+                  </div>
+            </fieldset>
+            
+            <input id = "signup-submit" type ="submit" value="Submit">
+            <br> <br>
+
+
+        </form>
+    </div>
+
+
+</body>
+</html>
