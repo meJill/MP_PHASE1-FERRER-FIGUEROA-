@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Home </title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function edit_pr(){
+
+        document.getElementById("edit_profile").onclick = function(){
+            location.href = "edit_profile.html";
+        
+        }}
+
+    </script>
+</head>
+<body>
+    <div class = "header">
+        <h2> GAME ART </h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new_post.html">Post</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="profile_2.html">ACHIM</a></li>
+        </ul>
+    </div>
+    <br> 
+    <br>   
+    <div class = "pfp-container">
+        <div class = "pic">
+            <img class = "pfp" src = "da.jpg"> 
+        </div>
+
+        <div class = "pfp-alias">
+            <br>
+            <span class = "pfp-user"> @ACHIM </span> 
+            <button action = "https:\\youtube.com" class = "follow"> <div class = "followbutton">Follow</div> </button> 
+            <button onclick = "edit_pr()" id = "edit_profile"> <div class = "editprofile"> Edit Profile </div></button>
+            
+        <br>
+        <ul>
+            <li>Followers: <span id = "follower"> 174 </span> </li>
+            <li>Following: <span id = "following"> 36 </span> </li>
+            <li>Posts: <span id = "posts"> 3 </span> </li>
+        </ul>
+        <br><br><br><br>
+            <div id = "nick">
+                Jemm
+            </div>
+            <br><br>
+            <div id = "desc">
+                ...
+
+                <br> <br>
+
+                Interests:
+                <ul id = "interest"> 
+                    <li id = "int1">Anime</li>
+                    <li id = "int3">Games</li>
+                    <li id = "int4">Chess</li>
+                </ul>
+            </div>
+            <br>
+           
+
+        </div>
+    </div>
+    <div class = "br"> <hr></div>
+    <div class = "post-container">
+        <div class = "posts">
+            <div class = "post-item">
+                <img src="iseria.jpg">
+                <div class="post-item-info">
+
+					<ul>
+						<li class="post-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 44</li>
+                        <br>
+						<li class="post-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+					</ul>
+
+				</div>
+            </div>
+
+        
+    </div>
+</body>
+
+
+
+
+</html>

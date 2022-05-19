@@ -5,6 +5,16 @@
     <title> Home </title>
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        function validateForm() {
+        var x = document.forms["loginform"]["uname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+}
+    </script>
+
 </head>
 <body>
     <div class = "header">
@@ -21,16 +31,16 @@
     <br> 
 
     <div class = "login-container">
-    <form action = "login()">
+    <form name = "loginform" action = "login()" onsubmit="return validateForm()" method="post">
 
             <label for ="uname"> Username: </label><br>
             <input type ="text" id="uname" name="uname" size = "100"><br>
             <br>
             <label for ="pword"> Password: </label><br>
-            <input type ="text" id="pword" name="pword"><br><br>
+            <input type ="password" id="pword" name="pword"><br><br>
             <input id = "login-submit" type ="submit" value="Submit">
             <br> <br>
-            Don't have an account? <a href = "signup.html"> Sign up</a>
+            Don't have an account? <a href = "sign_up.html"> Sign up</a>
 
         </form>
     </div>

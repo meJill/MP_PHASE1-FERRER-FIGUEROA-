@@ -4,7 +4,16 @@
 <head>
     <title> Home </title>
     <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function edit_pr(){
 
+        document.getElementById("edit_profile").onclick = function(){
+            location.href = "edit_profile.html";
+        
+        }}
+
+    </script>
 </head>
 <body>
     <div class = "header">
@@ -14,20 +23,21 @@
             <li><a href="new_post.html">Post</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li><a class="active" href="about.html">About</a></li>
-            <li><a id = "login" class="active" href="login.html">Login</a></li>
+            <li><a href="profile.html">GAEUL</a></li>
         </ul>
     </div>
     <br> 
     <br>   
     <div class = "pfp-container">
         <div class = "pic">
-            <img class = "pfp" src = "C:\Users\Jem Ferrer\Desktop\FOLDERS\yes\IVE\ga.jpg"> 
+            <img class = "pfp" src = "ga.jpg"> 
         </div>
 
         <div class = "pfp-alias">
             <br>
             <span class = "pfp-user"> @GAEUL </span> 
-            <button action = "https:\\youtube.com" class = "follow"> <div class = "followbutton">Follow</div> </button>
+            <button action = "https:\\youtube.com" class = "follow"> <div class = "followbutton">Follow</div> </button> 
+            <button onclick = "edit_pr()" id = "edit_profile"> <div class = "editprofile"> Edit Profile </div></button>
             
         <br>
         <ul>
@@ -42,19 +52,54 @@
             <br><br>
             <div id = "desc">
                 Hello my name is Gaeul and...
+
+                <br> <br>
+
+                Interests:
+                <ul id = "interest"> 
+                    <li id = "int1">Anime</li>
+                    <li id = "int2">K-Pop</li>
+                    <li id = "int3">Games</li>
+                </ul>
             </div>
+            <br>
+           
 
         </div>
+    </div>
+    <div class = "br"> <hr></div>
+    <div class = "post-container">
+        <div class = "posts">
+            <div class = "post-item">
+                <img src="astra.jpg">
+                <div class="post-item-info">
+
+					<ul>
+						<li class="post-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                        <br>
+						<li class="post-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+					</ul>
+
+				</div>
+            </div>
+            <div class = "post-item">
+                <img src="eula.jpg">
+                <div class="post-item-info">
+
+					<ul>
+						<li class="post-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                        <br>
+						<li class="post-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+					</ul>
+
+				</div>
+            </div>
+
+
         
     </div>
-    
-    <div class = "posts">
-
-        <hr>
-
-
-    </div> 
 </body>
+
 
 
 
